@@ -107,9 +107,7 @@ $(document).ready(function() {
         reset();
         $(".timer, .question, .choices").empty();
         $(".choices").append("<div class='start'>Start</div>");
-        $(".start").on("click", function () {
-            initialize();
-        });
+        $(".start").on("click", initialize);
     }
     
     function restart() {
@@ -198,7 +196,7 @@ $(document).ready(function() {
         $(".reveal").append("<div class='funny-gif'>");
         $(".funny-gif").append("<img id='theImg' src=" + q[index].image + ">");
         $("#theImg").css({ height: "200px", width: "200px" });
-        var timeoutID = window.setTimeout(initialize, 6000);
+        window.setTimeout(initialize, 6000);
     }
 
     function scorePage() {
@@ -209,9 +207,7 @@ $(document).ready(function() {
         $(".result").append("<div class='incorrect score'>Incorrect Answers: " + lossesCounter + "</div>");
         $(".result").append("<div class='unanswered score'>Unanswers: " + unansweredCounter + "</div>");
         $(".choices").append("<div class='restart'>Start Over?</div>");
-        $(".restart").on("click", function () {
-            restart();
-        });
+        $(".restart").on("click", restart);
     }
 
     start();
