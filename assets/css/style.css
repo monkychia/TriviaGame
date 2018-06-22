@@ -1,0 +1,62 @@
+
+
+body {
+    background-image: url("../images/party1.jpg");
+    font-family: "Times New Roman", Times, serif;
+    height: 100%;
+}
+
+.parent-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height:100vh;
+}
+
+.trivial {
+    background-color: #fff484;
+    height: 500px;
+    width: 250px;
+    display: flex;
+    display: block;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.title {
+    font-family: 'Monoton', cursive;
+    font-size: 35px;
+    color: blue;
+}
+
+.timer, .question, .choices {
+    text-align: center;
+    font-size: 25px;
+}
+
+.answer, .start, .restart {
+    font-size: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.start {
+    margin-top: 150px;
+}
+
+.answer:hover, .start, .restart {
+    background-color: pink;
+    border: 2px solid blue;
+}
+
+.restart {
+    margin-top: 15px;
+}
+
+.no {
+    font-size: 17px;
+}
+
+.score {
+    font-size: 18px;
+}
+
